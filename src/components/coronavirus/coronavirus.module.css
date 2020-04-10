@@ -1,0 +1,11 @@
+.coronavirus {
+    width: 370px;
+    margin-top: 40px;
+}
+
+/* for mobile devices */
+@media (max-width: 770px) {
+    .coronavirus {
+        width: 100%;
+    }
+}
