@@ -3,12 +3,15 @@ import {
     SET_CURRENT_COVID19_DATA,
     SET_DAILY_COVID19_DATA,
     SET_COUNTRIES,
-    SET_SELECTED_COUNTRY, SET_SELECTED_COUNTRY_DATA, SET_GLOBAL_DATA
+    SET_SELECTED_COUNTRY,
+    SET_SELECTED_COUNTRY_DATA,
+    SET_GLOBAL_DATA
 } from "./types";
 
 export const Reducer = (state, action) => {
 
     switch (action.type) {
+
         case SET_LOADING:
             return { ...state,
                 loading: true
@@ -46,6 +49,7 @@ export const Reducer = (state, action) => {
             const data = Object.values(action.payload);
             return { ...state,
                 loading: false,
+                global: false,
                 selectedCountryData: [...data]
             };
 

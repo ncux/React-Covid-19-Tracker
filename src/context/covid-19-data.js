@@ -5,7 +5,8 @@ import { Reducer } from "./reducer";
 import {
     SET_COUNTRIES,
     SET_CURRENT_COVID19_DATA,
-    SET_DAILY_COVID19_DATA, SET_GLOBAL_DATA,
+    SET_DAILY_COVID19_DATA,
+    SET_GLOBAL_DATA,
     SET_LOADING,
     SET_SELECTED_COUNTRY,
     SET_SELECTED_COUNTRY_DATA
@@ -19,7 +20,7 @@ const GlobalState = {
     recoveredCases: [],
     fatalities: [],
     lastUpdated: '',
-    dailyData: [],
+    dailyData: [],  // for the global line chart
     countries: [],
     selectedCountry: '',
     selectedCountryData: [],  // for selected country's bar chart
