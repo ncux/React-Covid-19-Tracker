@@ -4,6 +4,7 @@ metadata:
   name: covid-19-tracker-service
   labels:
     app: covid-19-tracker
+  namespace: covid-19-tracker
 spec:
   type: LoadBalancer
   ports:
