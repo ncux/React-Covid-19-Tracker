@@ -14,4 +14,3 @@ spec:
       nodePort: 31002
   selector:
     app: covid-19-tracker
-    
